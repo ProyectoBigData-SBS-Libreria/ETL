@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "vendor": "crisol",
+  "source": "crisol.com.pe",
+  "created_at": "2025-10-21T07:38:07",
+  "ingest_date": "2025-10-20",
+  "files": {
+    "raw_snapshot": {
+      "path": "/srv/bigdata/crisol_precios_allcats_20251020_203525.csv",
+      "sha256": "aef75065d2c3814c65d61c964c167845436fcba701adcb2ea518a6a0b830c52d"
+    },
+    "dedup": {
+      "path": "/srv/bigdata/crisol_snapshot_dedup.csv",
+      "sha256": "90e425f3b035bab9ae402cd0ffe9d73ed9820ea9f466ffec3a138eaa558eca97"
+    },
+    "final_enriched": {
+      "path": "/srv/bigdata/crisol_final_enriched.csv",
+      "sha256": "c57925d8cb40d866b9ec43872bcfcf39618c04827863a0a2dfe9e74887659c92"
+    }
+  },
+  "shape": {
+    "rows_raw": 18304,
+    "rows_dedup": 11179,
+    "rows_final": 11179,
+    "cols_final": [
+      "fecha_scraping",
+      "titulo",
+      "autor",
+      "precio_actual",
+      "precio_anterior",
+      "url_producto",
+      "categoria",
+      "categorias_join",
+      "url_norm",
+      "isbn",
+      "sku",
+      "editorial",
+      "edicion",
+      "anio_edicion",
+      "paginas",
+      "product_id",
+      "product_id_stable",
+      "product_key",
+      "vendor"
+    ]
+  },
+  "uniques": {
+    "url_norm": 11179,
+    "product_key": 11179
+  },
+  "fill_rates_pct": {
+    "autor": 79.80141336434386,
+    "isbn": 99.79425708918508,
+    "sku": 79.80141336434386,
+    "editorial": 88.22792736380714,
+    "edicion": 100.0,
+    "anio_edicion": 100.0,
+    "paginas": 100.0,
+    "product_id": 94.44494140799713,
+    "product_id_stable": 100.0,
+    "product_key": 100.0
+  },
+  "price_stats": {
+    "precio_actual": {
+      "count": 11179,
+      "min": 10.2,
+      "p50": 55.2,
+      "p90": 92.0,
+      "max": 981.0
+    },
+    "precio_anterior": {
+      "count": 9718,
+      "min": 1.099,
+      "p50": 69.9,
+      "p90": 119.0,
+      "max": 990.0
+    }
+  },
+  "top_categories": {
+    "Infantil": 1197,
+    "No Ficcion": 1185,
+    "Ficcion": 1185,
+    "Ficcion / Narrativa": 1141,
+    "No Ficcion / Humanidades": 1119,
+    "Juvenil": 966,
+    "Ficcion / Mangas": 929,
+    "Ficcion / Novelas": 676,
+    "Ficcion / Comics Y Novela Grafica": 601,
+    "Smart Play / Complementos / Utiles De Escritorio": 511
+  }
+}

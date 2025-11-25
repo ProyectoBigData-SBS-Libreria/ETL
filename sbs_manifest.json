@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "vendor": "sbs",
+  "source": "sbs.com.pe",
+  "created_at": "2025-10-07T14:30:09",
+  "ingest_date": "2025-10-06",
+  "files": {
+    "raw_snapshot": {
+      "path": "/srv/bigdata/sbs_precios_allcats_20251006_113446.csv",
+      "sha256": "df5142d3d3014bdc8ec00c5b18940e494f732948488f209b2f2a5568a19a3e7b"
+    },
+    "dedup": {
+      "path": "/srv/bigdata/sbs_snapshot_dedup.csv",
+      "sha256": "3bb9a561b944e8e9c90f4a39880ec2676c1bb1c2537e63f5b63db66eeb4b912a"
+    },
+    "final_enriched": {
+      "path": "/srv/bigdata/sbs_final_enriched.csv",
+      "sha256": "79a04a68c41a0bc5866795cfec73aacfccd098660c484ba053169f3c40ef72e8"
+    }
+  },
+  "shape": {
+    "rows_raw": 45169,
+    "rows_dedup": 24737,
+    "rows_final": 24737,
+    "cols_final": [
+      "fecha_scraping",
+      "titulo",
+      "autor",
+      "precio_actual",
+      "precio_anterior",
+      "url_producto",
+      "categoria",
+      "categorias_join",
+      "url_norm",
+      "isbn",
+      "sku",
+      "editorial",
+      "edicion",
+      "anio_edicion",
+      "paginas",
+      "product_id",
+      "product_id_stable",
+      "product_key",
+      "vendor"
+    ]
+  },
+  "uniques": {
+    "url_norm": 24737,
+    "product_key": 24737
+  },
+  "fill_rates_pct": {
+    "autor": 92.48089905809111,
+    "isbn": 99.94340461656628,
+    "sku": 0.0,
+    "editorial": 93.9321663904273,
+    "edicion": 100.0,
+    "anio_edicion": 100.0,
+    "paginas": 100.0,
+    "product_id": 19.98221287949226,
+    "product_id_stable": 100.0,
+    "product_key": 100.0
+  },
+  "price_stats": {
+    "precio_actual": {
+      "count": 24737,
+      "min": 0.0,
+      "p50": 64.8,
+      "p90": 129.0,
+      "max": 1299.4
+    },
+    "precio_anterior": {
+      "count": 1533,
+      "min": 9.9,
+      "p50": 64.0,
+      "p90": 132.98,
+      "max": 366.0
+    }
+  },
+  "top_categories": {
+    "Desarrollo Personal Y Bienestar": 960,
+    "Comics Manga Y Novelas Graficas": 960,
+    "Idiomas": 960,
+    "Juvenil": 960,
+    "Libros Para Ninos": 958,
+    "Literatura Y Ficcion": 958,
+    "Empresa Y Management": 957,
+    "No Ficcion": 955,
+    "Profesional Y Tecnico": 949,
+    "Literatura Y Ficcion / Narrativa Contemporanea": 814
+  }
+}

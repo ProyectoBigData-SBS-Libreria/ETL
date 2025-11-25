@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "ingest_date": "2025-11-09",
+  "vendor": "crisol",
+  "created_at": "2025-11-09T16:20:14",
+  "files": {
+    "users_csv": {
+      "path": "/srv/bigdata/crisol_usuarios_clean.csv",
+      "sha256": "ed5668c8d362e2999996256ad8d82e86d8c3a3add8aa44ed37ba5e4e203d0b70"
+    },
+    "tx_csv": {
+      "path": "/srv/bigdata/crisol_transacciones_clean.csv",
+      "sha256": "aed819f6eb267ee14ebfe6393c459be3d1f4b4926b116bd48509e27a73ebe178"
+    },
+    "tx_items_csv": {
+      "path": "/srv/bigdata/crisol_transaccion_items_clean.csv",
+      "sha256": "8b6b0556211e203794b57645ca25e1407e93018f851941518d97a278f254626c"
+    }
+  },
+  "shapes": {
+    "users": [
+      7500,
+      10
+    ],
+    "tx": [
+      67560,
+      10
+    ],
+    "tx_items": [
+      168380,
+      10
+    ]
+  },
+  "dups_removed": {
+    "users": 0,
+    "tx": 0,
+    "tx_items": 0
+  },
+  "fk_coverage_pct": 100.0,
+  "dates": {
+    "users": {
+      "min": "2023-01-01",
+      "max": "2024-08-23"
+    },
+    "tx": {
+      "min": "2022-10-01",
+      "max": "2025-10-01"
+    }
+  }
+}

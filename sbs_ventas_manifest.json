@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "ingest_date": "2025-11-09",
+  "vendor": "sbs",
+  "created_at": "2025-11-09T16:20:14",
+  "files": {
+    "users_csv": {
+      "path": "/srv/bigdata/sbs_usuarios_clean.csv",
+      "sha256": "3c304b666e852a315d7af33f517e65f8524f4cc36073285d9900c8a1779c7305"
+    },
+    "tx_csv": {
+      "path": "/srv/bigdata/sbs_transacciones_clean.csv",
+      "sha256": "ef198c8fd0a17c3b8d766ceee07d79d4b01614981a64af01476f036c93ef9897"
+    },
+    "tx_items_csv": {
+      "path": "/srv/bigdata/sbs_transaccion_items_clean.csv",
+      "sha256": "5281ffe4827929b7d7534556eff8a10655694afc9d14ea9615800c60315ff905"
+    }
+  },
+  "shapes": {
+    "users": [
+      4358,
+      8
+    ],
+    "tx": [
+      39780,
+      10
+    ],
+    "tx_items": [
+      99188,
+      10
+    ]
+  },
+  "dups_removed": {
+    "users": 1,
+    "tx": 0,
+    "tx_items": 0
+  },
+  "fk_coverage_pct": 100.0,
+  "dates": {
+    "users": {
+      "min": "2023-01-01",
+      "max": "2024-08-23"
+    },
+    "tx": {
+      "min": "2023-10-01",
+      "max": "2025-10-01"
+    }
+  }
+}
